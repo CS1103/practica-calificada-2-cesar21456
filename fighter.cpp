@@ -5,15 +5,23 @@
 #include "fighter.h"
 int fighter::attack2(){
     int sumatoria=0;
-    for (int i=0;i<a.size();i++){
-        sumatoria+=a[i]->attack();
+    if (a.size()==0){
+        return sumatoria;
+    }else {
+        for (int i = 0; i < a.size(); i++) {
+            sumatoria += a[i]->attack();
+        }
+        return sumatoria;
     }
-    return sumatoria;
 }
 int fighter::defense2(){
     int sumatoria=0;
-    for (int i=0;i<b.size();i++){
-        sumatoria+=b[i]->defense();
+    if (b.size()==0){
+        return sumatoria;
+    }else{
+        for (int i=0;i<b.size();i++){
+            sumatoria+=b[i]->defense();
+        }
+        return sumatoria;
     }
-    return sumatoria;
 }

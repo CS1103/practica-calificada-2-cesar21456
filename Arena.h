@@ -6,6 +6,8 @@
 #define PC2_ARENA_H
 #include "fight.h"
 #include <fstream>
+#include <string>
+using namespace std;
 
 class Arena {
     vector<fight> vector_de_peleas;
@@ -19,25 +21,6 @@ void run(fighter *A,fighter *B){
 vector<fight> get_fights(){
     return vector_de_peleas;
 }
-void load_fight(ifstream archivo){
-        string linea;
-        fighter *a;
-        fighter *b;
-        int contador=0;
-        while (getline(archivo,linea)){
-            contador+=1;
-        }
-        for (int i=0;i<contador/3;i++){
-            for (int j=0;j<3;j++){
-
-
-            }
-        }
-    }
-
-
-
-
 
 };
 
