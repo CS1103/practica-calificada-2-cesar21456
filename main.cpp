@@ -29,6 +29,7 @@ int main() {
     abs.get_fighter_b()->add_attack(y);
     abs.get_fighter_b()->add_Defense(w);
     abs.calcular_puntacion();
+    //en estos tests, estoy haciendo la comprobacion de que los luchadores, ataques, defensas y la batalla en si funcionen correctamente
     assert(abs.get_winner()=="a");
     assert(abs.get_score()==3);
     ifstream archivo("peleas.txt");
